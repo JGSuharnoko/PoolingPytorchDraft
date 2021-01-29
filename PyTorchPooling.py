@@ -49,10 +49,10 @@ def parse_pooling_layer(pytorch_layer, layer_name, input_shapes, data_reader, co
 
         layer['stride_height'] = pytorch_layer.stride[0]
         layer['stride_width'] = pytorch_layer.stride[1]
-        layer['pool_height'] = pytorch_layer. IDK
-        layer['pool_width']=pytorch_layer. IDK
+        layer['pool_height'] = pytorch_layer. #Not sure. missing
+        layer['pool_width']=pytorch_layer. #Not sure, missing
         layer['padding']=pytorch_layer.padding[0] 
-        #pytorch_layer.padding is an object with attributes lower()--> Should output 'same' or 'valid' or otherwise unsupported
+        #pytorch_layer.padding[0] is an object with attributes lower() that should output 'same' or 'valid'
 
         #hls4ml layers after padding
         (
